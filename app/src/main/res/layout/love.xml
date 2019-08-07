@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoveCal">
+
+
+        <TextView
+            android:id="@+id/txvCrushName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/dark"
+            android:layout_marginTop="20dp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/txvLove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Loves"
+        android:fontFamily="cursive"
+        android:textColor="@color/dark"
+        android:textSize="30sp"
+        />
+
+
+    <TextView
+        android:id="@+id/txvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txvLove"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="-161dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/dark"
+        android:textSize="25sp"/>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="385dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/txvName"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-384dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="190dp"
+        android:layout_toEndOf="@+id/txvPercent"
+        app:srcCompat="@drawable/ic_like"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txvCrushName"
+        android:layout_alignTop="@id/img"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="222dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/dark"
+        android:textSize="40sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/txvAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:text="Love is in the Air Drop"
+        android:textColor="@color/dark"
+        android:textSize="25sp"
+        android:fontFamily="cursive"/>
+    <Button
+        android:id="@+id/btnCalAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="cursive"
+        android:text="Calculate again"
+        android:textColor="@color/dark" />
+
+
+
+</RelativeLayout>
+

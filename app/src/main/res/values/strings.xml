@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoveCalculator</string>
+    <string name="crush_name">Crush Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="loves">Loves</string>
+    <string name="love_calculator">Love Calculator</string>
+
+</resources>

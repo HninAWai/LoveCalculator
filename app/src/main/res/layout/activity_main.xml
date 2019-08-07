@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCrushName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:text="@string/crush_name"
+            android:textColor="@color/dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edCrushName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg_selector"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/dark"
+            app:layout_constraintEnd_toEndOf="@+id/tvCrushName"
+            app:layout_constraintStart_toStartOf="@+id/tvCrushName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCrushName"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvLove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loves"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/dark"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="213dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/your_name"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/dark"
+            app:layout_constraintEnd_toEndOf="@+id/tvLove"
+            app:layout_constraintStart_toStartOf="@+id/tvLove"
+            app:layout_constraintTop_toBottomOf="@+id/tvLove"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/dark"
+            android:background="@drawable/edit_text_bg_selector"
+            app:layout_constraintEnd_toEndOf="@+id/tvName"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Calculate"
+            android:fontFamily="cursive"
+            android:textColor="@color/dark"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            app:layout_constraintEnd_toEndOf="@+id/edName"
+            app:layout_constraintStart_toStartOf="@+id/edName"
+            app:layout_constraintTop_toBottomOf="@+id/edName" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
